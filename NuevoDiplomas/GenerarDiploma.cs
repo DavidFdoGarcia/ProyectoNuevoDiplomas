@@ -190,6 +190,11 @@ namespace NuevoDiplomas
                         nombrePlantilla = "CONTABILIDAD.png";
                         break;
 
+
+                    case "CONTPAQi Comercial Premium®":
+                        nombrePlantilla = "COMERCIALP.png";
+                        break;
+
                     default:
                         nombrePlantilla = "CONTABILIDAD.png";
                         break;
