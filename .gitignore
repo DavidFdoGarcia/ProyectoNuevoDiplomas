@@ -57,10 +57,7 @@ Reportes/
 # Documentos de clientes (muy importante NO subir esto)
 DocumentosClientes/
 
-# Imágenes temporales o exportadas
-*.png
-*.jpg
-*.jpeg
+
 
 # =========================
 # 🔷 SISTEMA

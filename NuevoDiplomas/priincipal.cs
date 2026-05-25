@@ -26,5 +26,17 @@ namespace NuevoDiplomas
             Alumno AL = new Alumno();
             AL.Show();
         }
+
+        private void btnInscripcion_Click(object sender, EventArgs e)
+        {
+            Inscripcion ins = new Inscripcion();
+            ins.Show();
+        }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            GenerarDiploma gd = new GenerarDiploma();
+            gd.Show();
+        }
     }
 }

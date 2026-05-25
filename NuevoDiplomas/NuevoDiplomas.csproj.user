@@ -7,6 +7,12 @@
     <Compile Update="Configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GenerarDiploma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Inscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="priincipal.cs">
       <SubType>Form</SubType>
     </Compile>
