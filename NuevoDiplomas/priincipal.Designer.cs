@@ -29,23 +29,35 @@
         private void InitializeComponent()
         {
             btnConfig = new Button();
+            btnAlumno = new Button();
             SuspendLayout();
             // 
             // btnConfig
             // 
-            btnConfig.Location = new Point(65, 79);
+            btnConfig.Location = new Point(403, 226);
             btnConfig.Name = "btnConfig";
-            btnConfig.Size = new Size(75, 23);
+            btnConfig.Size = new Size(91, 42);
             btnConfig.TabIndex = 0;
-            btnConfig.Text = "button1";
+            btnConfig.Text = "Configuracion";
             btnConfig.UseVisualStyleBackColor = true;
             btnConfig.Click += btnConfig_Click;
+            // 
+            // btnAlumno
+            // 
+            btnAlumno.Location = new Point(27, 23);
+            btnAlumno.Name = "btnAlumno";
+            btnAlumno.Size = new Size(75, 23);
+            btnAlumno.TabIndex = 1;
+            btnAlumno.Text = "Alumno";
+            btnAlumno.UseVisualStyleBackColor = true;
+            btnAlumno.Click += btnAlumno_Click;
             // 
             // priincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(525, 310);
+            Controls.Add(btnAlumno);
             Controls.Add(btnConfig);
             Name = "priincipal";
             Text = "priincipal";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button btnConfig;
+        private Button btnAlumno;
     }
 }

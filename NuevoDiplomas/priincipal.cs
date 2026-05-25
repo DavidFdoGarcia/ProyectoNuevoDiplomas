@@ -20,5 +20,11 @@ namespace NuevoDiplomas
             Configuracion config = new Configuracion();
             config.Show();
         }
+
+        private void btnAlumno_Click(object sender, EventArgs e)
+        {
+            Alumno AL = new Alumno();
+            AL.Show();
+        }
     }
 }
