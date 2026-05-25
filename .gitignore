@@ -1,0 +1,76 @@
+# =========================
+# 🔷 VISUAL STUDIO / C#
+# =========================
+
+# Compilación
+bin/
+obj/
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Carpeta de Visual Studio
+.vs/
+
+# Rider / VSCode (por si acaso)
+.idea/
+.vscode/
+
+# =========================
+# 🔷 LOGS Y TEMPORALES
+# =========================
+*.log
+*.tmp
+*.cache
+
+# =========================
+# 🔷 CONFIGURACIONES LOCALES
+# =========================
+appsettings.json
+appsettings.Development.json
+*.config.user
+
+# Archivos .ini (si manejas rutas locales)
+*.ini
+
+# =========================
+# 🔷 BASE DE DATOS LOCAL
+# =========================
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# =========================
+# 🔷 ARCHIVOS GENERADOS (TU PROYECTO)
+# =========================
+
+# PDFs generados
+*.pdf
+
+# Reportes generados
+Reportes/
+
+# Documentos de clientes (muy importante NO subir esto)
+DocumentosClientes/
+
+# Imágenes temporales o exportadas
+*.png
+*.jpg
+*.jpeg
+
+# =========================
+# 🔷 SISTEMA
+# =========================
+Thumbs.db
+.DS_Store
+
+# =========================
+# 🔷 BACKUPS
+# =========================
+*.bak
+*.backup
+*.old
