@@ -35,6 +35,10 @@
             btnProbar = new Button();
             btnGuardar = new Button();
             btnSalir = new Button();
+            txtUsuario = new TextBox();
+            txtPassword = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -98,11 +102,47 @@
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             // 
+            // txtUsuario
+            // 
+            txtUsuario.Location = new Point(92, 101);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(100, 23);
+            txtUsuario.TabIndex = 10;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(98, 139);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(100, 23);
+            txtPassword.TabIndex = 9;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(12, 139);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Contraseña";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(12, 101);
+            label4.Name = "label4";
+            label4.Size = new Size(47, 15);
+            label4.TabIndex = 7;
+            label4.Text = "Usuario";
+            // 
             // Configuracion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(351, 163);
+            ClientSize = new Size(359, 190);
+            Controls.Add(txtUsuario);
+            Controls.Add(txtPassword);
+            Controls.Add(label3);
+            Controls.Add(label4);
             Controls.Add(btnSalir);
             Controls.Add(btnGuardar);
             Controls.Add(btnProbar);
@@ -126,5 +166,9 @@
         private Button btnProbar;
         private Button btnGuardar;
         private Button btnSalir;
+        private TextBox txtUsuario;
+        private TextBox txtPassword;
+        private Label label3;
+        private Label label4;
     }
 }
