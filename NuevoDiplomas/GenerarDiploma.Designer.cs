@@ -34,6 +34,8 @@
             btnCargar = new Button();
             btnGenerar = new Button();
             btnGenerarTodos = new Button();
+            txtBuscar = new TextBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvDiplomas).BeginInit();
             SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             // dgvDiplomas
             // 
             dgvDiplomas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDiplomas.Location = new Point(32, 81);
+            dgvDiplomas.Location = new Point(24, 116);
             dgvDiplomas.Name = "dgvDiplomas";
             dgvDiplomas.Size = new Size(565, 321);
             dgvDiplomas.TabIndex = 2;
@@ -92,11 +94,30 @@
             btnGenerarTodos.UseVisualStyleBackColor = true;
             btnGenerarTodos.Click += btnGenerarTodos_Click;
             // 
+            // txtBuscar
+            // 
+            txtBuscar.Location = new Point(221, 87);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(275, 23);
+            txtBuscar.TabIndex = 6;
+            txtBuscar.TextChanged += txtBuscar_TextChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(88, 90);
+            label2.Name = "label2";
+            label2.Size = new Size(42, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Buscar";
+            // 
             // GenerarDiploma
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(944, 521);
+            Controls.Add(label2);
+            Controls.Add(txtBuscar);
             Controls.Add(btnGenerarTodos);
             Controls.Add(btnGenerar);
             Controls.Add(btnCargar);
@@ -119,5 +140,7 @@
         private Button btnCargar;
         private Button btnGenerar;
         private Button btnGenerarTodos;
+        private TextBox txtBuscar;
+        private Label label2;
     }
 }

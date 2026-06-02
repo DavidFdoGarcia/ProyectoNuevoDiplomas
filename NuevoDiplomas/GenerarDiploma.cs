@@ -15,9 +15,11 @@ namespace NuevoDiplomas
 {
     public partial class GenerarDiploma : Form
     {
+        private DataTable tablaDiplomas;
         public GenerarDiploma()
         {
             InitializeComponent();
+
         }
 
         private void GenerarDiploma_Load(object sender, EventArgs e)
@@ -74,7 +76,9 @@ namespace NuevoDiplomas
                 { "@IdCurso", cmbCurso.SelectedValue }
             };
 
-            dgvDiplomas.DataSource = Consultas.Consultar(query, parametros);
+            tablaDiplomas = Consultas.Consultar(query, parametros);
+
+            dgvDiplomas.DataSource = tablaDiplomas;
 
             if (dgvDiplomas.Columns["IdInscripcion"] != null)
                 dgvDiplomas.Columns["IdInscripcion"].Visible = false;
@@ -204,7 +208,7 @@ namespace NuevoDiplomas
                     Application.StartupPath,
                     "PlantillasDiplomas",
                     nombrePlantilla
-                
+
                 );
 
                 if (!File.Exists(rutaPlantilla))
@@ -343,6 +347,17 @@ namespace NuevoDiplomas
             }
 
             MessageBox.Show($"Se generaron {generados} diplomas correctamente.");
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            if (tablaDiplomas == null)
+                return;
+
+            string filtro = txtBuscar.Text.Trim().Replace("'", "''");
+
+            tablaDiplomas.DefaultView.RowFilter =
+                $"Alumno LIKE '%{filtro}%'";
         }
     }
 }

@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\generardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:generardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\generardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:generardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:priincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\nuevodiplomas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:nuevodiplomas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:priincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\generardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:generardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|solutionrelative:configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A1D5A27-6155-BE84-8C70-259755361ADF}|NuevoDiplomas.csproj|c:\\users\\pc\\desktop\\archivosdavid\\nuevodiplomas\\proyectonuevodiplomas\\nuevodiplomas\\priincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,19 +54,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 10,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "priincipal.cs [Dise\u00F1o]",
+              "DocumentIndex": 6,
+              "Title": "priincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs",
               "RelativeDocumentMoniker": "priincipal.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "priincipal.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs [Design]",
+              "RelativeToolTip": "priincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T02:47:49.85Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenerarDiploma.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\GenerarDiploma.cs",
+              "RelativeDocumentMoniker": "GenerarDiploma.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\GenerarDiploma.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "GenerarDiploma.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T18:16:41.524Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -70,50 +87,40 @@
               "Title": "Alumno.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Alumno.cs",
               "RelativeDocumentMoniker": "Alumno.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Alumno.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Alumno.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Alumno.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Alumno.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T18:03:10.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "priincipal.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs",
-              "RelativeDocumentMoniker": "priincipal.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs",
-              "RelativeToolTip": "priincipal.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAIwCYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T03:03:48.087Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GenerarDiploma.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\GenerarDiploma.cs",
-              "RelativeDocumentMoniker": "GenerarDiploma.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\GenerarDiploma.cs",
-              "RelativeToolTip": "GenerarDiploma.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAUwMIAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T20:06:35.536Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Inscripcion.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Inscripcion.cs",
-              "RelativeDocumentMoniker": "Inscripcion.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Inscripcion.cs [Design]",
-              "RelativeToolTip": "Inscripcion.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T19:05:18.389Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-25T18:03:10.115Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GenerarDiploma.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\GenerarDiploma.cs",
+              "RelativeDocumentMoniker": "GenerarDiploma.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\GenerarDiploma.cs*",
+              "RelativeToolTip": "GenerarDiploma.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcBAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T20:06:35.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Inscripcion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Inscripcion.cs",
+              "RelativeDocumentMoniker": "Inscripcion.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Inscripcion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inscripcion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T19:05:18.389Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Inscripcion.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Inscripcion.cs",
               "RelativeDocumentMoniker": "Inscripcion.cs",
@@ -134,11 +141,12 @@
               "RelativeToolTip": "NuevoDiplomas.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-25T19:59:59.841Z"
+              "WhenOpened": "2026-05-25T19:59:59.841Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Configuracion.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Configuracion.cs",
               "RelativeDocumentMoniker": "Configuracion.cs",
@@ -150,20 +158,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Alumno.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Alumno.cs",
               "RelativeDocumentMoniker": "Alumno.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Alumno.cs",
               "RelativeToolTip": "Alumno.cs",
-              "ViewState": "AgIAAL8AAAAAAAAAAAAAwDIBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAUwJoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T18:21:17.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T18:21:17.575Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "priincipal.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs",
+              "RelativeDocumentMoniker": "priincipal.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\priincipal.cs",
+              "RelativeToolTip": "priincipal.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwCYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T03:03:48.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ArchivosDavid\\NuevoDiplomas\\ProyectoNuevoDiplomas\\NuevoDiplomas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

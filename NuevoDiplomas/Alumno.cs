@@ -23,6 +23,20 @@ namespace NuevoDiplomas
             txtID.Enabled = false;
             chkActivo.Checked = true;
             CargarAlumnos();
+            CargarCursos();
+        }
+        private void CargarCursos()
+        {
+            string query = @"
+        SELECT IdCurso, NombreCurso
+        FROM Curso
+        WHERE Activo = 1
+        ORDER BY NombreCurso";
+
+            cmbCurso.DataSource = Consultas.Consultar(query);
+            cmbCurso.DisplayMember = "NombreCurso";
+            cmbCurso.ValueMember = "IdCurso";
+            cmbCurso.SelectedIndex = -1;
         }
         private void CargarAlumnos()
         {
@@ -81,12 +95,7 @@ namespace NuevoDiplomas
 
             if (ExisteAlumno())
             {
-                MessageBox.Show(
-                    "Ya existe un alumno registrado con ese correo o teléfono.",
-                    "Sistema",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
+                MessageBox.Show("Ya existe un alumno registrado con ese correo o teléfono.");
                 return;
             }
 
@@ -94,7 +103,9 @@ namespace NuevoDiplomas
         INSERT INTO Alumno
         (Nombre, Apellidos, Correo, Telefono, Activo)
         VALUES
-        (@Nombre, @Apellidos, @Correo, @Telefono, @Activo)";
+        (@Nombre, @Apellidos, @Correo, @Telefono, @Activo);
+
+        SELECT CAST(SCOPE_IDENTITY() AS INT);";
 
             var parametros = new Dictionary<string, object>
     {
@@ -105,9 +116,41 @@ namespace NuevoDiplomas
         {"@Activo", chkActivo.Checked}
     };
 
-            Consultas.Ejecutar(query, parametros);
+            int idAlumno = Convert.ToInt32(
+                Consultas.EjecutarEscalar(query, parametros)
+            );
 
-            MessageBox.Show("Alumno guardado correctamente.");
+            if (cmbCurso.SelectedIndex >= 0)
+            {
+                string queryInscripcion = @"
+            IF NOT EXISTS (
+                SELECT 1
+                FROM Inscripcion
+                WHERE IdAlumno = @IdAlumno
+                AND IdCurso = @IdCurso
+            )
+            BEGIN
+                INSERT INTO Inscripcion
+                (IdAlumno, IdCurso, FechaInscripcion)
+                VALUES
+                (@IdAlumno, @IdCurso, GETDATE())
+            END";
+
+                var parametrosInscripcion = new Dictionary<string, object>
+        {
+            {"@IdAlumno", idAlumno},
+            {"@IdCurso", cmbCurso.SelectedValue}
+        };
+
+                Consultas.Ejecutar(queryInscripcion, parametrosInscripcion);
+
+                MessageBox.Show("Alumno guardado e inscrito correctamente.");
+            }
+            else
+            {
+                MessageBox.Show("Alumno guardado correctamente sin inscripción.");
+            }
+
             Limpiar();
             CargarAlumnos();
         }

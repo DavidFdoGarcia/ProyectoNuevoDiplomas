@@ -46,6 +46,9 @@
             btnNuevo = new Button();
             txtBuscar = new TextBox();
             btnExportarExcel = new Button();
+            label6 = new Label();
+            cmbCurso = new ComboBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvAlumnos).BeginInit();
             SuspendLayout();
             // 
@@ -208,11 +211,40 @@
             btnExportarExcel.UseVisualStyleBackColor = true;
             btnExportarExcel.Click += btnExportarExcel_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(547, 117);
+            label6.Name = "label6";
+            label6.Size = new Size(38, 15);
+            label6.TabIndex = 18;
+            label6.Text = "Curso";
+            // 
+            // cmbCurso
+            // 
+            cmbCurso.FormattingEnabled = true;
+            cmbCurso.Location = new Point(619, 114);
+            cmbCurso.Name = "cmbCurso";
+            cmbCurso.Size = new Size(121, 23);
+            cmbCurso.TabIndex = 19;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(2, 117);
+            label7.Name = "label7";
+            label7.Size = new Size(42, 15);
+            label7.TabIndex = 20;
+            label7.Text = "Buscar";
+            // 
             // Alumno
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(799, 569);
+            Controls.Add(label7);
+            Controls.Add(cmbCurso);
+            Controls.Add(label6);
             Controls.Add(btnExportarExcel);
             Controls.Add(txtBuscar);
             Controls.Add(btnNuevo);
@@ -259,5 +291,8 @@
         private Button btnNuevo;
         private TextBox txtBuscar;
         private Button btnExportarExcel;
+        private Label label6;
+        private ComboBox cmbCurso;
+        private Label label7;
     }
 }
