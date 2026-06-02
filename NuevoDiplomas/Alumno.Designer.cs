@@ -44,6 +44,8 @@
             btnModificar = new Button();
             btnGuardar = new Button();
             btnNuevo = new Button();
+            txtBuscar = new TextBox();
+            btnExportarExcel = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvAlumnos).BeginInit();
             SuspendLayout();
             // 
@@ -79,7 +81,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(518, 27);
             label4.Name = "label4";
-            label4.Size = new Size(53, 15);
+            label4.Size = new Size(52, 15);
             label4.TabIndex = 3;
             label4.Text = "Telefono";
             // 
@@ -140,7 +142,7 @@
             // dgvAlumnos
             // 
             dgvAlumnos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvAlumnos.Location = new Point(2, 119);
+            dgvAlumnos.Location = new Point(2, 143);
             dgvAlumnos.Name = "dgvAlumnos";
             dgvAlumnos.Size = new Size(773, 353);
             dgvAlumnos.TabIndex = 11;
@@ -187,11 +189,32 @@
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
             // 
+            // txtBuscar
+            // 
+            txtBuscar.Location = new Point(68, 114);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(434, 23);
+            txtBuscar.TabIndex = 16;
+            txtBuscar.TextChanged += txtBuscar_TextChanged;
+            // 
+            // btnExportarExcel
+            // 
+            btnExportarExcel.Location = new Point(427, 502);
+            btnExportarExcel.Name = "btnExportarExcel";
+            btnExportarExcel.Size = new Size(75, 23);
+            btnExportarExcel.TabIndex = 17;
+            btnExportarExcel.Text = "Exportar";
+            btnExportarExcel.UseCompatibleTextRendering = true;
+            btnExportarExcel.UseVisualStyleBackColor = true;
+            btnExportarExcel.Click += btnExportarExcel_Click;
+            // 
             // Alumno
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(799, 569);
+            Controls.Add(btnExportarExcel);
+            Controls.Add(txtBuscar);
             Controls.Add(btnNuevo);
             Controls.Add(btnGuardar);
             Controls.Add(btnModificar);
@@ -234,5 +257,7 @@
         private Button btnModificar;
         private Button btnGuardar;
         private Button btnNuevo;
+        private TextBox txtBuscar;
+        private Button btnExportarExcel;
     }
 }

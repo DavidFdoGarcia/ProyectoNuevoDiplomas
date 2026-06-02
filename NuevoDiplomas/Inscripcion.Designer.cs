@@ -39,6 +39,7 @@
             btnNuevo = new Button();
             btnGuardar = new Button();
             btnEliminar = new Button();
+            btnInscribirTodos = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvInscripciones).BeginInit();
             SuspendLayout();
             // 
@@ -138,11 +139,22 @@
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
             // 
+            // btnInscribirTodos
+            // 
+            btnInscribirTodos.Location = new Point(500, 556);
+            btnInscribirTodos.Name = "btnInscribirTodos";
+            btnInscribirTodos.Size = new Size(93, 47);
+            btnInscribirTodos.TabIndex = 11;
+            btnInscribirTodos.Text = "Inscribir todos";
+            btnInscribirTodos.UseVisualStyleBackColor = true;
+            btnInscribirTodos.Click += btnInscribirTodos_Click;
+            // 
             // Inscripcion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1084, 647);
+            Controls.Add(btnInscribirTodos);
             Controls.Add(btnEliminar);
             Controls.Add(btnGuardar);
             Controls.Add(btnNuevo);
@@ -175,5 +187,6 @@
         private Button btnNuevo;
         private Button btnGuardar;
         private Button btnEliminar;
+        private Button btnInscribirTodos;
     }
 }

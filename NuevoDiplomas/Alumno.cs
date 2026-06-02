@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
+using ClosedXML.Excel;
+using System.IO;
 
 namespace NuevoDiplomas
 {
@@ -77,20 +79,31 @@ namespace NuevoDiplomas
         {
             if (!ValidarCampos()) return;
 
+            if (ExisteAlumno())
+            {
+                MessageBox.Show(
+                    "Ya existe un alumno registrado con ese correo o teléfono.",
+                    "Sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
             string query = @"
-                INSERT INTO Alumno
-                (Nombre, Apellidos, Correo, Telefono, Activo)
-                VALUES
-                (@Nombre, @Apellidos, @Correo, @Telefono, @Activo)";
+        INSERT INTO Alumno
+        (Nombre, Apellidos, Correo, Telefono, Activo)
+        VALUES
+        (@Nombre, @Apellidos, @Correo, @Telefono, @Activo)";
 
             var parametros = new Dictionary<string, object>
-            {
-                {"@Nombre", txtNombre.Text.Trim()},
-                {"@Apellidos", txtApellidos.Text.Trim()},
-                {"@Correo", txtCorreo.Text.Trim()},
-                {"@Telefono", txtTelefono.Text.Trim()},
-                {"@Activo", chkActivo.Checked}
-            };
+    {
+        {"@Nombre", txtNombre.Text.Trim()},
+        {"@Apellidos", txtApellidos.Text.Trim()},
+        {"@Correo", txtCorreo.Text.Trim()},
+        {"@Telefono", txtTelefono.Text.Trim()},
+        {"@Activo", chkActivo.Checked}
+    };
 
             Consultas.Ejecutar(query, parametros);
 
@@ -98,7 +111,31 @@ namespace NuevoDiplomas
             Limpiar();
             CargarAlumnos();
         }
+        private void CargarAlumnos(string buscar = "")
+        {
+            string query = @"
+        SELECT
+            IdAlumno,
+            Nombre,
+            Apellidos,
+            Correo,
+            Telefono,
+            Activo
+        FROM Alumno
+        WHERE
+            Nombre LIKE @Buscar
+            OR Apellidos LIKE @Buscar
+            OR Correo LIKE @Buscar
+            OR Telefono LIKE @Buscar
+        ORDER BY Apellidos, Nombre";
 
+            var parametros = new Dictionary<string, object>
+    {
+        { "@Buscar", "%" + buscar + "%" }
+    };
+
+            dgvAlumnos.DataSource = Consultas.Consultar(query, parametros);
+        }
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtID.Text))
@@ -185,6 +222,89 @@ namespace NuevoDiplomas
             txtCorreo.Text = fila.Cells["Correo"].Value.ToString();
             txtTelefono.Text = fila.Cells["Telefono"].Value.ToString();
             chkActivo.Checked = Convert.ToBoolean(fila.Cells["Activo"].Value);
+        }
+        private bool ExisteAlumno()
+        {
+            string query = @"
+        SELECT COUNT(*)
+        FROM Alumno
+        WHERE Correo = @Correo
+        OR Telefono = @Telefono";
+
+            var parametros = new Dictionary<string, object>
+    {
+        {"@Correo", txtCorreo.Text.Trim()},
+        {"@Telefono", txtTelefono.Text.Trim()}
+    };
+
+            int total = Convert.ToInt32(
+                Consultas.EjecutarEscalar(query, parametros)
+            );
+
+            return total > 0;
+        }
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            CargarAlumnos(txtBuscar.Text.Trim());
+        }
+
+        private void btnExportarExcel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvAlumnos.Rows.Count == 0)
+                {
+                    MessageBox.Show("No hay datos para exportar.");
+                    return;
+                }
+
+                string carpeta = Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
+                    "ReportesDiplomas");
+
+                if (!Directory.Exists(carpeta))
+                    Directory.CreateDirectory(carpeta);
+
+                string ruta = Path.Combine(
+                    carpeta,
+                    $"Alumnos_{DateTime.Now:yyyyMMdd_HHmmss}.xlsx");
+
+                using (XLWorkbook libro = new XLWorkbook())
+                {
+                    var hoja = libro.Worksheets.Add("Alumnos");
+
+                    for (int i = 0; i < dgvAlumnos.Columns.Count; i++)
+                    {
+                        hoja.Cell(1, i + 1).Value =
+                            dgvAlumnos.Columns[i].HeaderText;
+                    }
+
+                    for (int i = 0; i < dgvAlumnos.Rows.Count; i++)
+                    {
+                        for (int j = 0; j < dgvAlumnos.Columns.Count; j++)
+                        {
+                            hoja.Cell(i + 2, j + 1).Value =
+                                dgvAlumnos.Rows[i].Cells[j].Value?.ToString();
+                        }
+                    }
+
+                    hoja.Columns().AdjustToContents();
+
+                    libro.SaveAs(ruta);
+                }
+
+                MessageBox.Show("Archivo exportado correctamente.");
+
+                System.Diagnostics.Process.Start(
+                    new System.Diagnostics.ProcessStartInfo(ruta)
+                    {
+                        UseShellExecute = true
+                    });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

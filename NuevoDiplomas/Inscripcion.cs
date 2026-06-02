@@ -201,5 +201,40 @@ namespace NuevoDiplomas
             cmbAlumno.SelectedValue = Convert.ToInt32(fila.Cells["IdAlumno"].Value);
             dtpFechaInscripcion.Value = Convert.ToDateTime(fila.Cells["FechaInscripcion"].Value);
         }
+
+        private void btnInscribirTodos_Click(object sender, EventArgs e)
+        {
+            if (cmbCurso.SelectedIndex < 0)
+            {
+                MessageBox.Show("Selecciona un curso.");
+                return;
+            }
+
+            string query = @"
+        INSERT INTO Inscripcion (IdAlumno, IdCurso, FechaInscripcion)
+        SELECT 
+            a.IdAlumno,
+            @IdCurso,
+            GETDATE()
+        FROM Alumno a
+        WHERE a.Activo = 1
+        AND NOT EXISTS (
+            SELECT 1
+            FROM Inscripcion i
+            WHERE i.IdAlumno = a.IdAlumno
+            AND i.IdCurso = @IdCurso
+        )";
+
+            var parametros = new Dictionary<string, object>
+    {
+        { "@IdCurso", cmbCurso.SelectedValue }
+    };
+
+            int insertados = Consultas.Ejecutar(query, parametros);
+
+            MessageBox.Show($"Se inscribieron {insertados} alumnos al curso.");
+
+            CargarInscripciones();
+        }
     }
 }
