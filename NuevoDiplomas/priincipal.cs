@@ -38,5 +38,11 @@ namespace NuevoDiplomas
             GenerarDiploma gd = new GenerarDiploma();
             gd.Show();
         }
+
+        private void btnGenerarPonencia_Click(object sender, EventArgs e)
+        {
+           FrmPonencia frmp = new FrmPonencia();
+            frmp.Show();
+        }
     }
 }

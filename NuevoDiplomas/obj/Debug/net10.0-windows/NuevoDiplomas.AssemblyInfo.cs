@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NuevoDiplomas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b785a9afa4452cbf42952b1d1b5141c31d8d3daf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+495b9f9e0e7bd5c4e18600a53bf4c3078104fb45")]
 [assembly: System.Reflection.AssemblyProductAttribute("NuevoDiplomas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NuevoDiplomas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

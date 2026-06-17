@@ -132,9 +132,11 @@ namespace NuevoDiplomas
 
             DateTime fechaCurso = Convert.ToDateTime(row["FechaCurso"]);
 
-            string dia = fechaCurso.Day.ToString();
-            string mes = fechaCurso.ToString("MMMM", new CultureInfo("es-MX"));
-            string anio = fechaCurso.Year.ToString();
+            DateTime fechaActual = DateTime.Now;
+
+            string dia = fechaActual.Day.ToString();
+            string mes = fechaActual.ToString("MMMM", new CultureInfo("es-MX"));
+            string anio = fechaActual.Year.ToString();
 
             mes = char.ToUpper(mes[0]) + mes.Substring(1);
 
@@ -216,6 +218,7 @@ namespace NuevoDiplomas
                     MessageBox.Show("No se encontró la plantilla:\n" + rutaPlantilla);
                     return;
                 }
+              
 
                 Document.Create(container =>
                 {
@@ -234,19 +237,21 @@ namespace NuevoDiplomas
                             {
                                 col.Spacing(0);
 
-                                col.Item().Height(225);
+                                col.Item().Height(242);
 
                                 col.Item().Row(row =>
                                 {
-                                    row.ConstantItem(320);
+                                    row.ConstantItem(305);
 
                                     row.RelativeItem()
+                                    
                                         .AlignLeft()
                                         .Text(nombre)
-                                        .FontSize(27)
+                                       .FontFamily("Times New Roman")
+                                        .FontSize(22)
                                         .Bold()
-                                        .Italic()
-                                        .FontColor(Colors.Black);
+                                        .Italic()   
+                                        .FontColor("#8B6B00");
                                 });
 
                                 col.Item().Height(65);
